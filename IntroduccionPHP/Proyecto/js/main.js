@@ -1,4 +1,9 @@
+$(document).ready(()=>{
+    console.log("ola")
+    $("#forms").fadeIn("slow")
+})
 if(document.location.href.includes("autentica.php")){
+
     function validaForma(){
         $("#frmAutentica").validate({
             rules: {
@@ -62,5 +67,43 @@ if(document.location.href.includes("registro.php")){
     let modall = document.querySelector("#modal");
     function openModal(){
         modall.showModal();
+    }
+}
+if(document.location.href.includes("firstTimeSetup.php")){
+    function pfpChanged(){
+        $('#fillerPfp').html("Image updated!");
+    }
+
+    function uploadUserInfo(){
+        $("#frmRegisterData").validate({
+            rules: {
+                imgSelector: "required",
+                bioTxt: "required"
+            },
+            messages: {
+                imgSelector: "<br><img src='../../media/error.png' class='errorImg' /> &nbsp;Value required",
+                bioTxt: "<br><img src='../../media/error.png' class='errorImg' /> &nbsp;Value required"
+            },
+            submitHandler: function (form) {
+                var forms = $('#frmRegisterData')[0];
+
+                var formData = new FormData(forms);
+                console.log(formData)
+                $.ajax({
+                    url: "qryRegistraData.php",
+                    type: "POST",
+                    data: formData,
+                    contentType: false,
+                    processData: false,
+                    success: function (response) {
+                        alert(response)
+                        $('#msgError').html(response);
+                    },
+                    error: function () {
+                        alert("Ha ocurrido un error!")
+                    }
+                })
+            }
+        })
     }
 }

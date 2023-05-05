@@ -20,7 +20,7 @@
     </div>
 </dialog>
 <div id="particles-js" class="white">
-<div class="signup">
+<div class="signup hidden" id="forms">
     <form name="frmSignup" id="frmSignup" method="post">
         <div class="header">
             <h1>Sign up</h1>

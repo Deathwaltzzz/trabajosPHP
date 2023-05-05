@@ -13,7 +13,7 @@
 </head>
 <body onload="document.getElementById('txtUsuario').focus()">
 <div id="particles-js">
-    <div class="forms">
+    <div class="forms hidden" id="forms">
         <form id="frmAutentica" name="frmAutentica"  method="POST">
             <div class="loginB">
                 <div class="header">
