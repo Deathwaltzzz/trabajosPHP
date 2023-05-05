@@ -1,0 +1,59 @@
+<!--Este archivo tiene un formulario hecho en HTML para poder comunicarse con un PHP y desplegar sus datos
+Autor: Leonardo Contreras Martinez-->
+<!DOCTYPE html>
+<html lang="en">
+<!--Head del documento-->
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario!</title>
+<!--    Relacion con CSS y api de Google Fonts-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<!--Tag Body-->
+<body>
+<!--Seccion Header para separar el titulo del body-->
+    <header>
+        <div>
+            <h1>Formulario</h1>
+        </div>
+    </header>
+<!--Seccion Main con el contenido principal de la pagina-->
+<main>
+    <div>
+<!--        Tag Form para poder introducir datos y mandarlos al PHP con el metodo POST-->
+        <form action="MostrarInfo.php" method="POST" name="form">
+            <p>Nombre: <input type="text" name="Nombre"></p><br>
+            <p>Apellido Paterno: <input type="text" name="ApellidoP"></p>
+            <p>Apellido Materno: <input type="text" name="ApellidoM"></p><br>
+            <p>Sexo: <br>
+                <input type="radio" name="gender" value="hombre" class="radioButton">&nbsp; Hombre <br>
+                <input type="radio" name="gender" value="mujer" class="radioButton">&nbsp; Mujer
+            </p> <br>
+            <p>Cual es tu genero favorito?</p> <br>
+            <input type="checkbox" name="musicG[]" value="metal"> Metal <br>
+            <input type="checkbox" name="musicG[]" value="pop"> Pop <br>
+            <input type="checkbox" name="musicG[]" value="grunge"> Grunge <br>
+            <input type="checkbox" name="musicG[]" value="PostPunk"> Post Punk <br>
+            <p>Selecciona un color de gato: </p> <br>
+            <select name="colorGato">
+                <option>Negro</option>
+                <option>Atigrado</option>
+                <option>Ragdoll</option>
+                <option>Naranja</option>
+                <option>Blanco</option>
+            </select> <br>
+            <p>Direccion: <input type="text" name="direccion" ></p> <br>
+            <p>Fecha de registro: <input type="date" name="fechaRegistro"></p> <br>
+            <p>Usuario: <input type="text" name="usuario"></p> <br>
+            <p>Contraseña: <input type="password" name="password"></p>
+            <div class="submit">
+                <input type="submit" value="enviar">
+            </div>
+        </form>
+    </div>
+</main>
+</body>
+</html>

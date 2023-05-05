@@ -1,0 +1,42 @@
+/*Tag body para cargar el background*/
+body{
+    background: url("../imgs/76YS.gif");
+}
+
+/*Tag img para las imagenes de gatos*/
+img{
+    width: 500px;
+    height: auto;
+    border-radius: 80px;
+    transition: .5s ease-in-out;
+
+}
+/*Su hover*/
+img:hover{
+    transition: .5s ease-in-out;
+    width: 600px;
+}
+/*Div main para el contenido principal en estilo flex*/
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*Etiquieta P para el parrafo*/
+p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+/*Etiqueta H3 solamente para la descripcion de la pagina*/
+h3{
+    text-justify: distribute-all-lines;
+    font-family: 'Kanit', sans-serif;
+    color: white;
+}
+/*Div para la descripcion de la pagina*/
+div.title{
+    width: 80%;
+    margin: 20px 0;
+}

@@ -1,0 +1,23 @@
+<!--Este archivo nos permite trabajar con el linkage de un archivo
+HTML con PHP para procesar los datos ingresados en el formulario
+Autor: Leonardo Contreras Martinez-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+  <form action="proceso.php" method="POST" name="Form">
+<!--    El valor del atributo 'name' permite hacer el linkeado del elemento con la variable en php-->
+    <p>Nombre: &nbsp;<input type="text" name="Nombre"></p>
+    <p>Apellido: &nbsp; <input type="text" name="Apellido"></p>
+
+    <input type="radio" name="gender" value="Male">Hombre
+    <input type="radio" name="gender" value="Female">Mujer
+
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>

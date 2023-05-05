@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    width: 100vw;
+}
+
+header div{
+    text-align: center;
+    align-items: center;
+    width: 60vw;
+    height: 10vh;
+    margin: auto;
+    justify-content: center;
+}
+main{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+main *{
+    display: inline-block;
+}
+
+main div{
+    width: 80vw;
+    height: auto;
+    margin: 10px 50px;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+main p{
+    margin-left: 10px;
+}
+
+h1{
+    font-family: 'Kanit', sans-serif;
+    color: red;
+}
+
+.radioButton{
+    margin: 10px 0 3px 0;
+}
+
+div.submit{
+    background: transparent;
+    box-shadow: none;
+    margin: auto;
+    text-align: center;
+}
+
+p.inner{
+    color:white;
+}
+
+main div p{
+    font-size: 20px;
+}
+
+div.gato{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-shadow: none;
+    background: none;
+}
+
+img.catto{
+    margin: auto;
+    width: auto;
+    height: 500px;
+    border-radius: 20px;
+}
