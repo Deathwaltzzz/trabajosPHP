@@ -26,7 +26,27 @@
     width: 100%;
     height: 100%;
     background: black;
-    margin: 0;
+}
+
+.inicio #particles-js {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -10;
+    background: black;
+    top: 0;
+    left: 0
+}
+
+.inicio #particles-js canvas {
+    display: block;
+    vertical-align: bottom;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+    transition: opacity .8s ease, transform 1.4s ease
 }
 
 #particles-js.white{
@@ -225,6 +245,10 @@ a{
     height: 100vh;
 }
 
+.firstSetupB h1{
+    font-family: 'Sigmar One', cursive;
+}
+
 .firstSetupB .mainContent{
     width: 60%;
     height: fit-content;
@@ -238,6 +262,7 @@ a{
 
 .firstSetupB p{
     margin: 20px 0px 0px 20px;
+    font-family: 'Kanit', sans-serif;
 }
 
 #pfpSelector{
@@ -253,6 +278,115 @@ a{
 }
 
 #sendData{
-    width: 5%;
+    width: 80px;
     border: 1px solid black;
+}
+
+body.inicio{
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.inicio .mainContent{
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 2% auto 50px;
+    width: 60%;
+    height: fit-content;
+    background: white;
+    text-align: center;
+    top: 15%;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    border-radius: 30px;
+    padding-bottom: 20px;
+}
+
+.inicio #particles-js{
+    background: grey;
+    height: 100%;
+}
+
+.particles-js-canvas-el{
+    height: 100vh;
+}
+
+.inicio h2{
+    font-family: 'Sigmar One', cursive;
+    color: black;
+}
+
+.inicio header{
+    margin: 0 auto;
+    width: 30%;
+    height: 10vh;
+    background: #000;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 0 10px 0 10px;
+}
+
+.inicio header p{
+    color: white;
+}
+
+.miniPfp{
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.userInfo{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.inicio p,a{
+    font-family: 'Kanit', sans-serif;
+}
+
+ul{
+    list-style: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+ul li{
+    font-family: 'Kanit', sans-serif;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.biog{
+    width: 40%;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 10px auto;
+    padding: 10px 0;
+    box-shadow: inset 0px 0px 0px 3px rgba(0,0,0,0.1);
+}
+
+h3{
+    font-family: 'Kanit', sans-serif;
+
+}
+
+.bigPfp{
+    width: 500px;
+    height: auto;
+    margin: 20px auto;
+}
+
+.innerHeader{
+    background: blanchedalmond;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
 }

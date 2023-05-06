@@ -26,17 +26,28 @@ if(isset($_POST["btnEnviar"])){
         if(strtolower($usr) == strtolower($_usr) and $pwd == $_pwd){
             $_SESSION['usr'] = $usr;
             $_SESSION['type'] = $type;
-            ?>
-            <script type="text/javascript">
-                alert("Login exitoso!")
-                window.location.href = "../../html/menu.html"
-            </script>
-            <?php
-            echo "Succesful login";
+
+            $strQry = "SELECT * FROM preferencias WHERE usuario='$usr'";
+            $coleccionRegistros = mysqli_query($link,$strQry);
+            if(mysqli_num_rows($coleccionRegistros) == 0){
+                ?>
+                <script>
+                    alert("Login exitoso!")
+                    window.location.href = "../menu/firstTimeSetup.php"
+                </script>
+                <?php
+            }else{
+                ?>
+                <script type="text/javascript">
+                    alert("Login exitoso!")
+                    window.location.href = "../menu/inicio.php"
+                </script>
+                <?php
+                echo "Succesful login";
+            }
         }else{
             echo "Usuario y/o contraseña incorrecta";
         }
     }
-
 }
 ?>

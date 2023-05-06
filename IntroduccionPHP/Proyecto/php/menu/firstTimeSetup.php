@@ -2,8 +2,11 @@
     session_start();
     if(empty($_SESSION['usr'])){
         echo "debe autentificarse";
+        die;
     }
     $currentUsr = $_SESSION['usr'];
+
+
 ?>
 
 <!doctype html>
@@ -17,7 +20,7 @@
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Kanit:wght@200&family=Sigmar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Sigmar+One&display=swap" rel="stylesheet">
 </head>
 <body class="firstSetupB">
     <div class="mainContent">

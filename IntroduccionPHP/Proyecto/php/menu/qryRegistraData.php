@@ -50,7 +50,12 @@ if(isset($_POST['sendData'])){
     }
     $bio = $_POST["bioTxt"];
     echo "$bio";
-   $query = "INSERT INTO preferencias VALUES(NULL,'$currentUsr','$target_file','$img','$bio')";
+    $checkNonExistent = mysqli_query($link,"SELECT * FROM PREFERENCIAS WHERE usuario = '$currentUsr'");
+    if(mysqli_num_rows($checkNonExistent) > 0){
+        $query = "UPDATE preferencias SET pfpDir = '$target_file', pfpName='$img',bio = '$bio' ";
+    }else{
+        $query = "INSERT INTO preferencias VALUES(NULL,'$currentUsr','$target_file','$img','$bio')";
+    }
 
     $coleccionRegistros = mysqli_query($link,$query);
 
