@@ -19,7 +19,7 @@
         <a href="../login/autentica.php">Click here to log in!</a>
     </div>
 </dialog>
-<div id="particles-js" class="white">
+<div id="particles-js" class="red">
 <div class="signup hidden" id="forms">
     <form name="frmSignup" id="frmSignup" method="post">
         <div class="header">

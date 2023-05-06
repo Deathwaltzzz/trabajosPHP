@@ -1,4 +1,5 @@
 <?php
+//Este php contiene el link/objeto a la base de datos para poder ser referenciado.
 
 $host = "localhost";
 $dbuser = "root";

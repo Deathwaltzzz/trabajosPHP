@@ -1,10 +1,11 @@
+/*Declaracion general para que la pagina abarque toda su totalidad*/
 *{
     margin: 0;
     padding: 0;
     color: black;
 }
 
-
+/*Contenido que va dentro del form en la pagina de autentica*/
 .loginB{
     width: 20vw;
     display: flex;
@@ -14,20 +15,20 @@
     background-image: radial-gradient( circle 400px at 6.8% 8.3%,  rgba(255,244,169,.9) 0%, rgba(255,244,234,.9) 100.2% );
     padding-bottom: 10px;
 }
-
+/*Un header para el login*/
 .header{
     margin: auto;
     padding-top: 20px;
     padding-bottom: 20px;
     font-family: 'Josefin Sans', sans-serif;
 }
-
+/*Configuracion basica del particle-js*/
 #particles-js{
     width: 100%;
     height: 100%;
     background: black;
 }
-
+/*Este particle-js es especial ya que no afecta a lo que este frente a el*/
 .inicio #particles-js {
     width: 100%;
     height: 100%;
@@ -37,7 +38,7 @@
     top: 0;
     left: 0
 }
-
+/*Lo mismo aplica para este*/
 .inicio #particles-js canvas {
     display: block;
     vertical-align: bottom;
@@ -48,11 +49,11 @@
     -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
     transition: opacity .8s ease, transform 1.4s ease
 }
-
-#particles-js.white{
+/*Fondo rojo para el particle js*/
+#particles-js.red{
     background: crimson;
 }
-
+/*Contenido del forms en la pagina autentica*/
 .content{
     display: flex;
     flex-direction: column;
@@ -64,7 +65,7 @@
 .class{
     margin-bottom: 20px;
 }
-
+/*Estilo del form de la pagina registro.php*/
 .forms{
     top: 30%;
     position: absolute;
@@ -73,7 +74,7 @@
     margin: auto;
     width: 30vw;
 }
-
+/*Estilo del div que almacena el form*/
 .signup{
     margin-top: 25vh;
     position: absolute;
@@ -93,7 +94,7 @@
     font-family: 'Kanit', sans-serif;
     color: white;
 }
-
+/*Estos estilos de abajo son estilo para los forms, simplemente para posicion su mayoria*/
 #frmSignup{
     display: flex;
     background-color: #0093E9;
@@ -115,27 +116,27 @@
     border-radius: 20px;
     padding: 2px;
 }
-
+/*Estilo general del input*/
 input{
     margin-top: 5px;
     border: none;
     border-radius: 20px;
     padding: 2px;
 }
-
+/*Un margen para que no se vea todo pegado*/
 #password{
     margin-top: 20px;
 }
-
+/*Estilo para los mensajes de error del ajax*/
 .error{
     color: red;
 }
-
+/*Imagen para el mensaje de error ajax*/
 .errorImg{
     width: 15px;
     height: 15px;
 }
-
+/*Los de abajo son estilo del boton de signup en la pagina autentica*/
 .button-17 {
     margin-top: 30px;
     padding: 12.5px 30px;
@@ -159,7 +160,7 @@ input{
     -webkit-transition: all 0.25s;
     box-shadow: none;
 }
-
+/*Los de abajo son estilo del boton de submit de la pagina registra*/
 .sbmb{
     text-align: center;
     margin: 20px auto auto;
@@ -200,11 +201,11 @@ input{
     box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.3);
     transform: translate(0.1em, 0.1em);
 }
-
+/*Estilo general del anchor*/
 a{
     color:red;
 }
-
+/*Modal hace referencia a una ventana emergente*/
 #modal{
     font-family: 'Kanit', sans-serif;
     position: fixed;
@@ -217,14 +218,14 @@ a{
     z-index: 10;
     height: 10vh;
 }
-
+/*Estilo para donde se despliegan los mensajes de error*/
 #msgError{
     font-size: 20px;
     color: red;
     margin-top: 20px;
     text-align: center;
 }
-
+/*Estilo del anchor de la pagina registra*/
 .loginInstead{
     text-align: center;
     transition: .35s ease;
@@ -238,17 +239,17 @@ a{
 .hidden{
     display: none;
 }
-
+/*Body para la pagina firstSetup*/
 .firstSetupB{
     background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );
     width: 100vw;
     height: 100vh;
 }
-
+/*Estilo de h1 para la pagina firstSetupB*/
 .firstSetupB h1{
     font-family: 'Sigmar One', cursive;
 }
-
+/*Div para el contenido principal de la pagina firstSetup*/
 .firstSetupB .mainContent{
     width: 60%;
     height: fit-content;
@@ -259,12 +260,12 @@ a{
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
     padding-bottom: 30px;
 }
-
+/*Estilo de P para la pagina firstSetup*/
 .firstSetupB p{
     margin: 20px 0px 0px 20px;
     font-family: 'Kanit', sans-serif;
 }
-
+/*Los estilos de abajo son para espaciado de los atributos */
 #pfpSelector{
     width: 100px;
     height: auto;
@@ -281,12 +282,12 @@ a{
     width: 80px;
     border: 1px solid black;
 }
-
+/*Body de la pagina inicio.php*/
 body.inicio{
     height: 100%;
     overflow-y: scroll;
 }
-
+/*Div para el contenido principal de la paigina inicio*/
 .inicio .mainContent{
     position: relative;
     left: 0;
@@ -301,7 +302,7 @@ body.inicio{
     border-radius: 30px;
     padding-bottom: 20px;
 }
-
+/*Configuracion extra para el particle-js*/
 .inicio #particles-js{
     background: grey;
     height: 100%;
@@ -310,12 +311,12 @@ body.inicio{
 .particles-js-canvas-el{
     height: 100vh;
 }
-
+/*Estilo para el h2 en la pagina inicio*/
 .inicio h2{
     font-family: 'Sigmar One', cursive;
     color: black;
 }
-
+/*Encabezado de la pagina .inicio*/
 .inicio header{
     margin: 0 auto;
     width: 30%;
@@ -329,28 +330,28 @@ body.inicio{
     align-items: center;
     padding: 0 10px 0 10px;
 }
-
+/*Estilo para el P del encabezado en inicio*/
 .inicio header p{
     color: white;
 }
-
+/*Estilo para una imagen chica en .inicio*/
 .miniPfp{
     width: 50px;
     height: auto;
     border-radius: 50%;
     margin-right: 20px;
 }
-
+/*Div para cargar la informacion del usuario en el header*/
 .userInfo{
     display: flex;
     text-align: center;
     align-items: center;
 }
-
+/*Estilo de p y a para la pagina inicio*/
 .inicio p,a{
     font-family: 'Kanit', sans-serif;
 }
-
+/*Estilo general de listas*/
 ul{
     list-style: none;
     margin: 0 auto;
@@ -362,7 +363,7 @@ ul li{
     margin: 10px;
     font-size: 20px;
 }
-
+/*Div contenedor de la biografia del usuario*/
 .biog{
     width: 40%;
     border-radius: 10px;
@@ -371,18 +372,18 @@ ul li{
     padding: 10px 0;
     box-shadow: inset 0px 0px 0px 3px rgba(0,0,0,0.1);
 }
-
+/*Estilo del h3*/
 h3{
     font-family: 'Kanit', sans-serif;
 
 }
-
+/*Estilo para una foto grande*/
 .bigPfp{
     width: 500px;
     height: auto;
     margin: 20px auto;
 }
-
+/*Encabezado dentro del contenido principal de la pagina inicio*/
 .innerHeader{
     background: blanchedalmond;
     border-radius: 10px;
